@@ -38,6 +38,7 @@
             android:background="@drawable/rectangle"
             android:hint="Name"
             android:paddingLeft="30px"
+            android:inputType="text"
             tools:ignore="InvalidId" />
 
         <EditText
@@ -51,11 +52,94 @@
             android:hint="Specialite"
             android:paddingLeft="30px"
             tools:ignore="InvalidId"
+            android:inputType="text"
             />
 
+        <EditText
+            android:id="@+id/Edit_entree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/rectangle"
+            android:hint="Date of entree"
+            android:paddingLeft="30px"
+            tools:ignore="InvalidId"
+            android:inputType="date"
+            />
 
-    </androidx.cardview.widget.CardView>
+        <EditText
+            android:id="@+id/Edit_prom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/rectangle"
+            android:hint="Date of promotion"
+            android:paddingLeft="30px"
+            android:inputType="date"
+            />
+
+        <EditText
+            android:id="@+id/Edit_base_salary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/rectangle"
+            android:hint="Base Salary"
+            android:paddingLeft="30px"
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/Edit_actual_salary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/rectangle"
+            android:hint="Actual Salary"
+            android:paddingLeft="30px"
+            android:inputType="numberDecimal"
+            tools:ignore="DuplicateIds" />
 
 
+
+                                      </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_send_infos"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="93dp"
+
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="174dp"
+        android:gravity="center"
+        android:text="Sumbit"
+        android:textColor="@color/light_grey"
+        android:textSize="24sp"
+        tools:ignore="UnknownId" />
+
+   <TextView
+       android:id="@+id/txtview1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="650dp"
+       android:text="Go back to main menu!"
+       android:textColor="@color/olive_green"
+       android:textSize="24sp"
+       android:gravity="center"
+       android:textStyle="bold"
+
+       />
 
 </RelativeLayout>
